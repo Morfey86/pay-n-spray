@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js" defer></script>
+    <title>Покраска автомобиля в Екатеринбурге</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header data-scroll="200" data-scroll-show="300" class="header">
+        <div class="navi">
+            <div class="header_content">
+                <div class="logo_text">
+                    <span><a href="#">ПОКРАСКА</a></span>
+                    <span><a href="#">АВТОМОБИЛЯ</a></span>
+                    <p>Кузовной ремонт</p>
+                </div>
+                <button class="mobile_menu_button" id="mobile_menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <!-- <button id="mobile_menu_button" class="mobile_menu_button">≡</button> -->
+                <nav class="navi_body">
+                    <ul class="navi_menu">
+                        <li class="navi_item">
+							<a href="#services" class="navi_link">Услуги</a>
+						</li>
+						<li class="navi_item">
+							<a href="#about" class="navi_link">О нас</a>
+                        </li>
+						<li class="navi_item">
+							<a href="#contact" class="navi_link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                 <li class="navi_phone">
+					<a class="phone" href="tel:+79122886666"><i class="phone_icon">&#x2706;</i> +7-912-288-66-66</a>
+				    <a class="phone" href="tel:+79002097788"><i class="phone_icon">&#x2706;</i> +7-900-209-77-88</a>
+				</li>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Фронтальная секция -->
+    <section class="front" id="front_container">
+        <div class="container">
+            <div class="front-content">
+                <h1 class="front-title">                
+                    <span class="text_part" id="text_part1">Покраска автомобиля</span>
+                    <span class="text_part" id="text_part2">в Екатеринбурге</span>
+                 </h1>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Услуги -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем полный спектр услуг по кузовному ремонту и покраске автомобилей</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('../Визитка/img/service_pic_1.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Локальный кузовной ремонт</h3>
+                        <p>Устранение вмятин, царапин и других повреждений кузова без полной покраски.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('../Визитка/img/service_pic_2.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Полная покраска автомобиля</h3>
+                        <p>Качественная покраска автомобиля с подготовкой поверхности и гарантией результата.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('../Визитка/img/service_pic_3.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Полировка и защита кузова</h3>
+                        <p>Восстановление блеска лакокрасочного покрытия и нанесение защитных составов.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('../Визитка/img/service_pic_4.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Ремонт после ДТП</h3>
+                        <p>Комплексный ремонт кузова после аварии с восстановлением геометрии.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('../Визитка/img/service_pic_5.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Покраска деталей</h3>
+                        <p>Покраска отдельных элементов кузова с подбором цвета по коду производителя.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('../Визитка/img/service_pic_6.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Антикоррозийная обработка</h3>
+                        <p>Защита кузова от коррозии с использованием современных материалов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О нашей мастерской</h2>
+                    <p>Наша команда состоит из профессионалов, которые знают свое дело.</p>
+                    <p>Мы используем только качественные материалы и профессиональное оборудование, что позволяет нам гарантировать отличный результат для наших клиентов.</p>
+                    <p>Наша миссия - вернуть вашему автомобилю первоначальный вид, сделав ремонт качественно и в срок.</p>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Как нас найти</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Адрес: г. Екатеринбур, пер. Никольский, д. 47</p>
+                    <p>Телефон: +7 (912) 278-66-66</p>
+                    <p>Телефон: +7 (900) 209-77-88</p>
+                    <p>Режим работы: Пн-Вс: 9:00 - 21:00</p>
+                </div>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4f578d05480a10672d2f1a6a2da7346a66ed477e9ba04c408e7aa907ba5f3b0&amp;source=constructor" style="width: 100%; height: 60vh;" frameborder="0" id="iframe"></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
