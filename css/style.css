@@ -75,11 +75,11 @@ body::after {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  max-width: 800px;
+  max-width: 50vw;
 }
-.header .logo_text span {
+/* .header .logo_text span {
   -webkit-text-stroke: 2px rgba(17, 14, 68, 0.904);
-}
+} */
 .header .logo_text span a {
   text-decoration: none;
   color: #dfa812;
