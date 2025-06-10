@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Шапка -->
@@ -28,20 +28,26 @@
                 <nav class="navi_body">
                     <ul class="navi_menu">
                         <li class="navi_item">
-							<a href="#services" class="navi_link">Услуги</a>
-						</li>
-						<li class="navi_item">
-							<a href="#about" class="navi_link">О нас</a>
+                            <a href="#services" class="navi_link">Услуги</a>
                         </li>
-						<li class="navi_item">
-							<a href="#contact" class="navi_link">Контакты</a>
+                        <li class="navi_item">
+                            <a href="#about" class="navi_link">О нас</a>
                         </li>
-                        <li class="navi_phone">
+                        <li class="navi_item">
+                            <a href="#contact" class="navi_link">Контакты</a>
+                        </li>
+                        <!-- Телефоны в мобильном меню -->
+                        <li class="mobile_phones">
                             <a class="phone" href="tel:+79122886666"><i class="phone_icon">&#x2706;</i> +7-912-288-66-66</a>
                             <a class="phone" href="tel:+79002097788"><i class="phone_icon">&#x2706;</i> +7-900-209-77-88</a>
                         </li>
                     </ul>
                 </nav>
+                <!-- Телефоны в десктопной версии -->
+                <div class="navi_phone">
+                    <a class="phone" href="tel:+79122886666"><i class="phone_icon">&#x2706;</i> +7-912-288-66-66</a>
+                    <a class="phone" href="tel:+79002097788"><i class="phone_icon">&#x2706;</i> +7-900-209-77-88</a>
+                </div>
             </div>
         </div>
     </header>
@@ -116,7 +122,6 @@
                 </div>
             </div>
         </div>
-    </section>
     
     <!-- О нас -->
     <section class="about" id="about">
@@ -141,12 +146,12 @@
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <p>Адрес: г. Екатеринбур, пер. Никольский, д. 47</p>
+                    <p>Адрес: г. Екатеринбург, пер. Никольский, д. 47</p>
                     <p>Телефон: +7 (912) 278-66-66</p>
                     <p>Телефон: +7 (900) 209-77-88</p>
                     <p>Режим работы: Пн-Вс: 9:00 - 21:00</p>
                 </div>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4f578d05480a10672d2f1a6a2da7346a66ed477e9ba04c408e7aa907ba5f3b0&amp;source=constructor" style="width: 100%; height: 60vh;" frameborder="0" id="iframe"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4f578d05480a10672d2f1a6a2da7346a66ed477e9ba04c408e7aa907ba5f3b0&amp;source=constructor" width="680" height="680" frameborder="0"></iframe>
             </div>
         </div>
     </section>
