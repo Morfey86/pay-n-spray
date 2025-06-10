@@ -210,61 +210,21 @@ body::after {
     color: #dfa812;
   }
 }
-@supports (
-  font-size: clamp(0.875rem, 0.7579787234rem + 0.585106383vw, 1.5625rem)
-) {
-  .phone {
-    font-size: clamp(0.875rem, 0.7579787234rem + 0.585106383vw, 1.5625rem);
-  }
-}
-@supports not (
-  font-size: clamp(0.875rem, 0.7579787234rem + 0.585106383vw, 1.5625rem)
-) {
-  .phone {
-    font-size: calc(0.875rem + 0.6875 * (100vw - 20rem) / 117.5);
-  }
-}
 @media (max-width: 767.98px) {
-  .header {
+    .header {
     height: 80px;
-  }
-  .header_content {
-    height: 80px;
-    justify-content: space-between; /* Равномерное распределение элементов */
   }
   .header .navi .header_content .navi_body .navi_menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     height: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
   }
-  .logo_text span a {
-    font-size: 24px;
-    -webkit-text-stroke: 1px rgba(17, 14, 68, 0.904);
-  }
-  .logo_text p{
-    display: none;
-  }
-  .navi_phone {
-    display: none;
-  }
-  .navi_menu::after {
-    content: "";
-    display: block;
-    padding: 15px 0;
-    text-align: center;
-  }
-  .navi_menu::after a {
-    display: block;
-    color: #dfa812;
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  .navi_item {
+  .navi_item{
     margin: 15px 0;
   }
   .header .navi .header_content .navi_body .navi_menu .navi_item a {
@@ -303,20 +263,20 @@ body::after {
     bottom: 0;
   }
   .mobile_menu_button.active .bar:nth-child(1) {
-    transform: translateY(0.7845px) rotate(45deg);
-    top: 50%;
-    background: #dfa812;
-  }
+  transform: translateY(0.7845px) rotate(45deg);
+  top: 50%;
+  background: #dfa812;
+}
 
-  .mobile_menu_button.active .bar:nth-child(2) {
-    opacity: 0;
-  }
+.mobile_menu_button.active .bar:nth-child(2) {
+  opacity: 0;
+}
 
-  .mobile_menu_button.active .bar:nth-child(3) {
-    transform: translateY(-0.9px) rotate(-45deg);
-    top: 50%;
-    background: #dfa812;
-  }
+.mobile_menu_button.active .bar:nth-child(3) {
+  transform: translateY(-0.9px) rotate(-45deg);
+  top: 50%;
+  background: #dfa812;
+}
   .navi_body {
     position: fixed;
     top: 0;
@@ -347,17 +307,21 @@ body::after {
     pointer-events: all;
   }
 }
-@media (max-width: 480px) {
-  .navi_item a {
-    font-size: 1.4rem !important; /* Уменьшаем размер пунктов меню */
+.header_content .navi_phone {
+  z-index: 5;
+}
+@supports (
+  font-size: clamp(0.875rem, 0.7579787234rem + 0.585106383vw, 1.5625rem)
+) {
+  .phone {
+    font-size: clamp(0.875rem, 0.7579787234rem + 0.585106383vw, 1.5625rem);
   }
-  
-  .front-title {
-    font-size: 1.5rem; /* Дополнительное уменьшение */
-  }
-  
-  .section-title h2 {
-    font-size: 1.8rem; /* Уменьшаем размер заголовков секций */
+}
+@supports not (
+  font-size: clamp(0.875rem, 0.7579787234rem + 0.585106383vw, 1.5625rem)
+) {
+  .phone {
+    font-size: calc(0.875rem + 0.6875 * (100vw - 20rem) / 117.5);
   }
 }
 /* Фронтальная секция */
@@ -460,12 +424,6 @@ body::after {
     font-size: 10vh;
   }
 }
-@media (max-width: 767.98px) {
-  .front-title {
-    font-size: 2rem; 
-    -webkit-text-stroke: 1px #000;
-  }
-}
 /* Услуги */
 .services {
   padding: 100px 0;
@@ -504,6 +462,10 @@ body::after {
   transition: transform 0.3s;
 }
 
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
 .service-img {
   height: 300px;
   max-width: 100%;
@@ -524,24 +486,6 @@ body::after {
 .service-content p {
   color: #ddd;
   font-size: 1.8vh;
-}
-@media (min-width: 767.98px) {
-  .service-card:hover {
-  transform: translateY(-10px);
-}
-}
-@media (max-width: 767.98px) {
-  .services {
-    padding: 50px 0;
-  }
-  
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .service-img {
-    height: 200px;
-  }
 }
 /* О нас */
 .about {
@@ -587,8 +531,9 @@ body::after {
     font-size: 18px;
   }
   .about-image {
-    height: 40vh; /* Уменьшаем высоту изображения */
-    order: -1; /* Изображение сверху */
+    min-height: 300px;
+    height: 60vh;
+    order: -1;
   }
 }
 /* Как нас найти */
@@ -631,8 +576,5 @@ footer {
 @media (max-width: 767.98px) {
   .contact-info p {
     font-size: 18px;
-  }
-  #iframe {
-    height: 40vh; /* Уменьшаем высоту карты */
   }
 }

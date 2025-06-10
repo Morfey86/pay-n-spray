@@ -13,11 +13,12 @@ menuButton.addEventListener('click', function () {
    document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
 });
 
-/* overlay.addEventListener('click', function () {
-    sidebar.classList.remove('active');
-    overlay.classList.remove('active');
-    document.body.style.overflow = 'auto';
-}); */
+overlay.addEventListener('click', function() {
+  menuButton.classList.remove('active');
+  sidebar.classList.remove('active');
+  overlay.classList.remove('active');
+  document.body.style.overflow = 'auto';
+});
 
 menu_links.forEach(link => {
     link.addEventListener('click', function () {
