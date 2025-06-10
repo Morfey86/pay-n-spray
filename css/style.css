@@ -85,7 +85,6 @@ body::after {
   color: #dfa812;
   text-shadow: 3px 3px 0 #000;
   font-family: "gilroy";
-  font-display: swap;
   font-weight: 600;
   font-style: normal;
   font-size: 38px;
@@ -492,7 +491,7 @@ body::after {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
 }
 
@@ -506,7 +505,7 @@ body::after {
 
 .service-img {
   height: 300px;
-  max-width: 100%;
+  min-width: 100%;
   background-color: #ddd;
   background-size: 100% auto;
   background-position: center;
@@ -540,7 +539,7 @@ body::after {
   }
   
   .service-img {
-    height: 200px;
+    height: 250px;
   }
 }
 /* О нас */
