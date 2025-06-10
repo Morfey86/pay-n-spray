@@ -585,7 +585,7 @@ body::after {
   margin-bottom: 30px;
 }
 
-.contact-info p, a{
+.contact-info li{
   color: white;
   font-size: 2vw;
   padding-bottom: 25px;
@@ -593,6 +593,7 @@ body::after {
   margin-left: 10px;
   text-decoration: none;
 }
+
 footer {
   background-color: #222;
   color: white;
