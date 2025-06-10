@@ -521,11 +521,8 @@ body::after {
   .services {
     padding: 50px 0;
   }
-     .service-img {
-    height: 100vw;
-  }
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(min-content, auto);
   }
 }
