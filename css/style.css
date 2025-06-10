@@ -176,8 +176,7 @@ body::after {
 .header .navi .header_content .navi_phone .phone {
   display: inline-block;
   align-items: center;
-  flex-direction: column;
-/*   padding: 1%; */
+  flex-direction: column
 }
 @media (min-width: 767.98px) {
   .navi_item::after {
@@ -221,7 +220,7 @@ body::after {
   }
   .header_content {
     height: 80px;
-    justify-content: space-between; /* Равномерное распределение элементов */
+    justify-content: space-between;
   }
   .header .navi .header_content .navi_body .navi_menu {
     display: flex;
@@ -235,7 +234,6 @@ body::after {
   }
   .logo_text span a {
     font-size: 24px;
-    /* -webkit-text-stroke: 1px rgba(17, 14, 68, 0.904); */
   }
   .logo_text p{
     display: none;
@@ -441,17 +439,6 @@ body::after {
   100% {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-@media (min-width: 767.98px) {
-/*   .front-title {
-    font-size: 6vw;
-  } */
-}
-@media (max-width: 767.98px) {
-  .front-title {
-/*     font-size: 6vw;  */
-/*     -webkit-text-stroke: 1px #000; */
   }
 }
 /* Услуги */
