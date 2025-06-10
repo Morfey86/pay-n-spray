@@ -533,7 +533,7 @@ body::after {
     padding: 50px 0;
   }
      .service-img {
-    height: 80vw;
+    height: 100vw;
   }
   .services-grid {
     grid-template-columns: 1fr;
