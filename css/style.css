@@ -81,7 +81,6 @@ body::after {
   text-decoration: none;
   color: #dfa812;
   text-shadow: 3px 3px 0 #000;
-  font-family: "gilroy";
   font-weight: 600;
   font-style: normal;
   font-size: 38px;
@@ -134,7 +133,6 @@ body::after {
   font-weight: 300;
   position: relative;
   padding: 5px 2px;
-  font-family: "gilroy";
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -155,7 +153,6 @@ body::after {
   line-height: 1.2;
   font-weight: 500px;
   font-size: 16px;
-  font-family: "gilroy";
   display: block;
   align-items: center;
   text-transform: uppercase;
@@ -374,7 +371,6 @@ body::after {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   margin-bottom: 20px;
-  font-family: "bungee" crusive;
   text-shadow: 3px 3px 4px #000;
   color: #dfa812;
   -webkit-text-stroke: 3px #000;
