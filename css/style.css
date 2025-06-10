@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: "gilroy", sans-serif;
 }
 
 html,
@@ -84,9 +84,9 @@ body::after {
   text-decoration: none;
   color: #dfa812;
   text-shadow: 3px 3px 0 #000;
-  font-family: Arial crusive;
+  font-family: "gilroy";
   font-display: swap;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
   font-size: 38px;
 }
